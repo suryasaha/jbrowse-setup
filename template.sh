@@ -7,13 +7,6 @@ set -u #exit if uninit var
 set -o nounset
 set -o errexit
 
-# vars
-PRED_COLOR 	= "orange"
-GENE_COLOR 	= "yellow"
-CDS_COLOR 	= "blue"
-REPEAT_COLOR 	= "green"
-
-
 # cleanup
 if [ -d data/json/??? ]
 then

@@ -19,9 +19,9 @@ bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_uf506/HQ377374.gbrowse.gf
 
 bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_uf506/HQ377374.gbrowse.gff3 --type CDS --trackLabel CDS  --key "CDS" --trackType CanvasFeatures --out data/json/las_uf506/ --clientConfig '{"description" : "note", "label" : "name,id", "color" : "blue" }' --metadata '{"description": "CDS from NCBI Refseq", "category": "General" }' --urltemplate "http://www.ncbi.nlm.nih.gov/sutils/blink.cgi?pid={name}"
 
-bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_uf506/HQ377374.gbrowse.gff3 --type repeat:RepeatScout --trackLabel RepeatScout  --key "ab-initio repeats" --trackType CanvasFeatures --out data/json/las_uf506/ --clientConfig '{"description" : "note", "label" : "name,id", "color" : "green" }' --metadata '{"description": "ab-initio repeats predicted by RepeatScout", "category": "Prediction" }'
+bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_uf506/HQ377374.gbrowse.gff3 --type repeat:RepeatScout --trackLabel RepeatScout  --key "RepeatScout repeats" --trackType CanvasFeatures --out data/json/las_uf506/ --clientConfig '{"description" : "note", "label" : "name,id", "color" : "green" }' --metadata '{"description": "ab-initio repeats predicted by RepeatScout", "category": "Prediction" }'
 
-bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_uf506/HQ377374.gbrowse.gff3 --type repeat:RepeatMasker --trackLabel RepeatMasker  --key "Known repeats" --trackType CanvasFeatures --out data/json/las_uf506/ --clientConfig '{"description" : "note", "label" : "name,id", "color" : "green" }' --metadata '{"description": "RepeatMasker matches to known repeats in RepBase", "category": "Prediction" }'
+bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_uf506/HQ377374.gbrowse.gff3 --type repeat:RepeatMasker --trackLabel RepeatMasker  --key "RepeatMasker repeats" --trackType CanvasFeatures --out data/json/las_uf506/ --clientConfig '{"description" : "note", "label" : "name,id", "color" : "green" }' --metadata '{"description": "RepeatMasker matches to known repeats in RepBase", "category": "Prediction" }'
 
 
 # create assembly tracks

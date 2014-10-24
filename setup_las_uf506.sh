@@ -15,9 +15,9 @@ bin/prepare-refseqs.pl --fasta ~/work/jbrowse_setup/las_uf506/HQ377374.fa --out 
 printf "[general]\ndataset_id = las_uf506\n" > data/json/las_uf506/tracks.conf                                 
 
 # create annotation tracks
-bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_uf506/HQ377374.gbrowse.gff3  --type gene  --trackLabel gene --key "Genes" --trackType CanvasFeatures --out data/json/las_uf506/ --clientConfig '{"label" : "name,id", "color" : "yellow" }' --metadata '{"description": "Genes from NCBI Refseq", "category": "General" }' --urltemplate "http://www.ncbi.nlm.nih.gov/protein?term={name}"
+bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_uf506/HQ377374.gbrowse.gff3  --type gene  --trackLabel gene --key "Genes" --trackType CanvasFeatures --out data/json/las_uf506/ --clientConfig '{"label" : "name,id", "color" : "yellow" }' --metadata '{"description": "Genes from NCBI Refseq with links to NCBI Protein DB", "category": "General" }' --urltemplate "http://www.ncbi.nlm.nih.gov/protein?term={name}"
 
-bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_uf506/HQ377374.gbrowse.gff3 --type CDS --trackLabel CDS  --key "CDS" --trackType CanvasFeatures --out data/json/las_uf506/ --clientConfig '{"description" : "note", "label" : "name,id", "color" : "blue" }' --metadata '{"description": "CDS from NCBI Refseq", "category": "General" }' --urltemplate "http://www.ncbi.nlm.nih.gov/sutils/blink.cgi?pid={name}"
+bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_uf506/HQ377374.gbrowse.gff3 --type CDS --trackLabel CDS  --key "CDS" --trackType CanvasFeatures --out data/json/las_uf506/ --clientConfig '{"description" : "note", "label" : "name,id", "color" : "blue" }' --metadata '{"description": "CDS from NCBI Refseq with links to NCBI Blast", "category": "General" }' --urltemplate "http://www.ncbi.nlm.nih.gov/sutils/blink.cgi?pid={name}"
 
 bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_uf506/HQ377374.gbrowse.gff3 --type repeat:RepeatScout --trackLabel RepeatScout  --key "RepeatScout repeats" --trackType CanvasFeatures --out data/json/las_uf506/ --clientConfig '{"description" : "note", "label" : "name,id", "color" : "green" }' --metadata '{"description": "ab-initio repeats predicted by RepeatScout", "category": "Prediction" }'
 

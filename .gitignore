@@ -8,9 +8,6 @@ hierarchical_track_selector.css
 icons.css
 index.html
 INSTALL
-jbrowse.conf
-jbrowse.conf~
-jbrowse_conf.json
 LICENSE
 main.css
 Makefile
@@ -23,7 +20,6 @@ README.md
 release-notes.txt
 sequence.css
 setup.log
-#setup.sh#
 setup.sh
 track_styles.css
 tristate.css

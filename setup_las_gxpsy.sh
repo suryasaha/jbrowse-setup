@@ -15,9 +15,9 @@ bin/prepare-refseqs.pl --fasta ~/work/jbrowse_setup/las_gxpsy/NC_020549.1.fa --o
 printf "[general]\ndataset_id = las_gxpsy\n" > data/json/las_gxpsy/tracks.conf
 
 # create annotation tracks
-bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_gxpsy/NC_020549.gbrowse.gff3  --type gene  --trackLabel gene --key "Genes" --trackType CanvasFeatures --out data/json/las_gxpsy/ --clientConfig '{"label" : "name,id", "color" : "yellow" }' --metadata '{"description": "Genes from NCBI Refseq", "category": "General" }' --urltemplate "http://www.ncbi.nlm.nih.gov/protein?term={name}" 
+bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_gxpsy/NC_020549.gbrowse.gff3  --type gene  --trackLabel gene --key "Genes" --trackType CanvasFeatures --out data/json/las_gxpsy/ --clientConfig '{"label" : "name,id", "color" : "yellow" }' --metadata '{"description": "Genes from NCBI Refseq linked to NCBI Protein DB", "category": "General" }' --urltemplate "http://www.ncbi.nlm.nih.gov/protein?term={name}" 
 
-bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_gxpsy/NC_020549.gbrowse.gff3 --type CDS --trackLabel CDS  --key "CDS" --trackType CanvasFeatures --out data/json/las_gxpsy/ --clientConfig '{"description" : "note", "label" : "name,id", "color" : "blue " }' --metadata '{"description": "CDS from NCBI Refseq", "category": "General" }' --urltemplate "http://www.ncbi.nlm.nih.gov/sutils/blink.cgi?pid={name}"
+bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_gxpsy/NC_020549.gbrowse.gff3 --type CDS --trackLabel CDS  --key "CDS" --trackType CanvasFeatures --out data/json/las_gxpsy/ --clientConfig '{"description" : "note", "label" : "name,id", "color" : "blue" }' --metadata '{"description": "CDS from NCBI Refseq linked to NCBI Blink", "category": "General" }' --urltemplate "http://www.ncbi.nlm.nih.gov/sutils/blink.cgi?pid={name}"
 
 # create assembly tracks
 # NA

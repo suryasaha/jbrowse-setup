@@ -31,8 +31,7 @@ bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_psy62/NC_012985.gbrowse.g
 
 bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_psy62/NC_012985.gbrowse.gff3 --type Nick_Grishin  --trackLabel Nick_Grishin --urltemplate "http://prodata.swmed.edu/congqian/{name}.html" --key "Protein annotations" --trackType CanvasFeatures --out data/json/las_psy62/ --clientConfig '{"label" : "name,id", "color" : "orange" }' --metadata '{"description": "Protein annotations from Nick Grishins lab", "category": "Predictions" }'
 
-# removed --clientConfig '{"label" : "note", "color" : "orange" }'
-bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_psy62/NC_012985.gbrowse.gff3 --type LSO_BlastHit  --trackLabel LSO_BlastHit --key "Blast hits to LSO" --trackType CanvasFeatures --out data/json/las_psy62/ --metadata '{"description": "Unique regions in LAS when compared to LSO", "category": "Predictions" }'
+bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_psy62/NC_012985.gbrowse.gff3 --type LSO_BlastHit  --trackLabel LSO_BlastHit --key "Blast hits to LSO" --trackType CanvasFeatures --out data/json/las_psy62/ --clientConfig '{"label" : "note", "color" : "orange" }'  --metadata '{"description": "Unique regions in LAS when compared to LSO", "category": "Predictions" }'
 
 bin/flatfile-to-json.pl --gff ~/work/jbrowse_setup/las_psy62/NC_012985.gbrowse.gff3 --type GeneExpr  --trackLabel GeneExpr --urltemplate "http://onlinelibrary.wiley.com/doi/10.1111/mpp.12015/abstract" --key "Yan et al. 2013" --trackType CanvasFeatures --out data/json/las_psy62/ --clientConfig '{"description" : "note", "label" : "name,id", "color" : "violet" }' --metadata '{"description": "Gene expression data from Yan et al. 2013", "category": "Predictions" }'
 

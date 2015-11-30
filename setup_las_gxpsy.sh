@@ -43,7 +43,7 @@ cd "$JB_DIR"
 rm -rf data/json/las_gxpsy
 
 # load refs and data source
-bin/prepare-refseqs.pl --fasta "${GENOME_DIR}/NC_020549.1.fa" --out data/json/las_gxpsy
+./bin/prepare-refseqs.pl --fasta "${GENOME_DIR}/NC_020549.1.fa" --out data/json/las_gxpsy
 printf "[general]\ndataset_id = las_gxpsy\n" > data/json/las_gxpsy/tracks.conf
 
 # create annotation tracks

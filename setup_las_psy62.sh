@@ -33,7 +33,7 @@ printf "LAS dir: %s \n" "$2"
 JB_DIR="$1"
 GENOME_DIR="$2"
 
-printf "Please store only the data files in LAS dir %s \nCurrent files are.. \n" "$GENOME_DIR"
+printf "Please store the data files in LAS dir %s \nCurrent files are.. \n" "$GENOME_DIR"
 
 cd "$GENOME_DIR"
 ls -lh
